@@ -1,7 +1,7 @@
 class Foo {
 
-    String foo() {
-        return "foo";
-    }
+  String foo() {
+    return "foo";
+  }
 
 }
