@@ -1,14 +1,19 @@
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FooTest {
+@DisplayName("A foo")
+class FooTest {
+
+    private Foo foo = new Foo();
 
     @Test
-    public void foo() {
-        assertThat(
-                new Foo().foo())
+    @DisplayName("returns foo")
+    void isNotEmpty() {
+        assertThat(foo.foo())
                 .isEqualTo("foo");
     }
+
 
 }
