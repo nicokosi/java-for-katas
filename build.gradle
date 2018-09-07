@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+group = 'org.nicokosi'
+version = '1.0-SNAPSHOT'
+
+description = """A basic Java project with test libraries for katas """
+
+sourceCompatibility = 10
+targetCompatibility = 10
+
+tasks.withType(JavaCompile) {
+  options.encoding = 'UTF-8'
+}
+
+repositories {
+  maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.+'
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.+'
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.+'
+  testCompile group: 'org.assertj', name: 'assertj-core', version: '3.9.+'
+}
+
+test {
+  useJUnitPlatform()
+}
