@@ -2,3 +2,12 @@ language: java
 
 jdk:
   - openjdk11
+
+addons:
+  sonarcloud:
+    organization: "nicokosi-github"
+    token:
+      secure: "TsFMilJPdw1V35l5VHoZwXWEeNVs++GY76Qut75f12+ac5Y58zm+t7hyjrcFxl3n9Zk43864RDg7wqW51Di5D2tDWTtpW8iPFPvrevj/PvtlG1KNqLrYtxbLSPMSFD6oA1URG1ikSUPaLslGe4vRlzCi+C5soN6osDyA9KrIxFBpJVZUNRxNFHmxpi7H3wQfIJGeL0ea4Askj6qIujvU76Dp4GLwcJ+pHHG2ig2R8cZWcT+Qsaib1NjKie51Z+sT2Qvc8r0BU5UOcDNJ4gu91xAyBCzORMG2Q2vwvr5uHNaV1jEdcmjD1Hw3rQPFLYL9vJ2rMkDn9kPPw8P5Bc8voUg1a9gTa0bp92igDuWieAdrFDXLdVE0GuSa1x3zXrD7vB/y//6tStA7AvDF4mdL9OgxovOwgROpV8TNFemgnBIQJMcPnj444uOx1LR8KdqKgmo40b5vqCDoQkN0utxw3QP7w9wsNyTI00lHHh5fTMiWSWTS76akPAMHortHUFQx/AtHT/oTGcgjmXgG/z1ZmXkdFW960P6sefvQnrJW/FK32D2JUEQxZFY+KzknR6gx79XNK73fj1OqLxvGo6gNTAXJV7+rx8tnCd7KnrynlpLKUbt6SqoopBLfZctm0SNH2mAdVSA5nkyWzfLQIafvmWvlEvwhLrvcboGMCXVDGkY="
+
+script:
+  - sonar-scanner
