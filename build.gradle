@@ -1,4 +1,7 @@
-apply plugin: 'java'
+plugins {
+  id 'com.adarshr.test-logger' version '1.6.0'
+  id 'java'
+}
 
 group = 'org.nicokosi'
 version = '1.0-SNAPSHOT'
