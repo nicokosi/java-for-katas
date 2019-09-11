@@ -12,3 +12,11 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 ## Suggested katas
 
 * [Coffee machine](http://simcap.github.io/coffeemachine)
+
+## Development tasks
+
+### Upgrade the build system
+
+Check the current version in [the `Gradle` documentation](https://docs.gradle.org) and run:
+
+  ./gradlew wrapper --gradle-version $GRADLE_CURRENT_VERSION%
