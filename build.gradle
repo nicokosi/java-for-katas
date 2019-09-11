@@ -1,8 +1,8 @@
 plugins {
-  id 'com.adarshr.test-logger' version '1.6.0'
+  id 'com.adarshr.test-logger' version '1.7.0'
   id 'java'
   id 'se.patrikerdes.use-latest-versions' version '0.2.12'
-  id 'com.github.ben-manes.versions' version '0.21.0'
+  id 'com.github.ben-manes.versions' version '0.25.0'
 }
 
 group = 'org.nicokosi'
@@ -23,12 +23,12 @@ repositories {
 }
 
 dependencies {
-  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.+'
-  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.+'
-  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.+'
-  testCompile group: 'org.assertj', name: 'assertj-core', version: '3.9.+'
-  testCompile group: 'org.mockito', name: 'mockito-core', version: '2.+'
-  testCompile group: "net.jqwik", name: "jqwik", version: "0.8.+"
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.2'
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.5.2'
+  testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.5.2'
+  testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+  testCompile group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
+  testCompile group: "net.jqwik", name: "jqwik", version: "1.2.0"
 }
 
 test {
