@@ -5,6 +5,7 @@ A basic Java setup for [code katas](http://wiki.c2.com/?CodeKata).
 ## Usage
 
 Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (for instance, [`IntelliJ IDEA`](https://www.jetbrains.com/idea/)) or run:
+
 ```sh
 ./gradlew test
 ```
@@ -15,8 +16,16 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 
 ## Development tasks
 
+### Upgrade the dependencies
+
+```sh
+./gradlew useLatestVersions
+```
+
 ### Upgrade the build system
 
 Check the current version in [the `Gradle` documentation](https://docs.gradle.org) and run:
 
-  ./gradlew wrapper --gradle-version $GRADLE_CURRENT_VERSION%
+```sh
+./gradlew wrapper --gradle-version $GRADLE_CURRENT_VERSION%
+```
