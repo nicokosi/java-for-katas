@@ -20,12 +20,12 @@ repositories {
 }
 
 dependencies {
-  testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.5.2")
-  testImplementation("org.junit.jupiter", "junit-jupiter-params", "5.5.2")
-  testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.5.2")
-  testImplementation("org.assertj", "assertj-core", "3.13.2")
-  testImplementation("org.mockito", "mockito-core", "3.1.0")
-  testImplementation("net.jqwik", "jqwik", "1.2.0")
+  testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.0")
+  testImplementation("org.junit.jupiter", "junit-jupiter-params", "5.6.0")
+  testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.6.0")
+  testImplementation("org.assertj", "assertj-core", "3.15.0")
+  testImplementation("org.mockito", "mockito-core", "3.3.3")
+  testImplementation("net.jqwik", "jqwik", "1.2.4")
 }
 
 tasks.withType<Test> {
