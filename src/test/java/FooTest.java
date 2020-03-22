@@ -18,9 +18,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 @Label("Foo")
 class FooTest {
 
-  private Bar bar = mock(Bar.class);
-
-  private Foo foo = new Foo(bar);
+  private final Bar bar = mock(Bar.class);
+  private final Foo foo = new Foo(bar);
 
   @Test
   @DisplayName("returns mocked bar")
