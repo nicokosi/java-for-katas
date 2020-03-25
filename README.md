@@ -4,6 +4,11 @@ A basic Java setup for [code katas](http://wiki.c2.com/?CodeKata).
 
 ## Usage
 
+Pre-requisites:
+
+- Java Development Kit 14 minimum ([SDKMAN!](https://sdkman.io/) can be used for JDK installation)
+- Integrated Development Environment compatible with Java 14 (for instance, [IntelliJ IDEA](https://www.jetbrains.com/idea/) 2020.1)
+
 Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (for instance, [`IntelliJ IDEA`](https://www.jetbrains.com/idea/)) or run:
 
 ```sh
@@ -12,7 +17,7 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 
 ## Suggested katas
 
-* [Coffee machine](http://simcap.github.io/coffeemachine)
+- [Coffee machine](http://simcap.github.io/coffeemachine)
 
 ## Development tasks
 
