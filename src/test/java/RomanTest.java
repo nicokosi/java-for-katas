@@ -35,4 +35,9 @@ class RomanTest {
     assertThat(roman.roman(10)).isEqualTo("X");
   }
 
+  @Test
+  void twenty() {
+    assertThat(roman.roman(20)).isEqualTo("XX");
+  }
+
 }
