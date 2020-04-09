@@ -10,4 +10,15 @@ class RomanTest {
     assertThat(roman.roman(1)).isEqualTo("I");
   }
 
+  @Test
+  void two() {
+    assertThat(roman.roman(2)).isEqualTo("II");
+  }
+
+  @Test
+  void four() {
+    assertThat(roman.roman(4)).isEqualTo("IV");
+  }
+
+
 }
