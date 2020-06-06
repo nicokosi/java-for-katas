@@ -29,8 +29,10 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 
 ### Upgrade the build system
 
-Check the current version in [the `Gradle` documentation](https://docs.gradle.org) and run:
+Check the current version in [the `Gradle` documentation](https://docs.gradle.org) and run
+the following command with the correct value for `GRADLE_VERSION`:
 
 ```sh
-./gradlew wrapper --gradle-version $GRADLE_CURRENT_VERSION%
+export GRADLE_VERSION="x.y" \
+  ./gradlew wrapper --gradle-version $GRADLE_VERSION
 ```
