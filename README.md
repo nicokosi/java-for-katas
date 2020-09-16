@@ -6,8 +6,8 @@ A basic Java setup for [code katas](http://wiki.c2.com/?CodeKata).
 
 Pre-requisites:
 
-- Java Development Kit 14 minimum ([SDKMAN!](https://sdkman.io/) can be used for JDK installation)
-- Integrated Development Environment compatible with Java 14 (for instance, [IntelliJ IDEA](https://www.jetbrains.com/idea/) 2020.1)
+- Java Development Kit 15 minimum ([SDKMAN!](https://sdkman.io/) can be used for JDK installation)
+- Integrated Development Environment compatible with this JDK version (for instance, [IntelliJ IDEA](https://www.jetbrains.com/idea/))
 
 Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (for instance, [`IntelliJ IDEA`](https://www.jetbrains.com/idea/)) or run:
 
