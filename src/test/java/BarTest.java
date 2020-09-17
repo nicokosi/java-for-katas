@@ -14,32 +14,27 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-@DisplayName("Foo")
-@Label("Foo")
-class FooTest {
-
-  private final Bar bar = mock(Bar.class);
-  private final Foo foo = new Foo(bar);
+class BarTest {
 
   @Test
-  @DisplayName("returns mocked bar")
-  void returns_mocked_bar() {
-    when(bar.bar()).thenReturn("foo");
-    assertThat(foo.foo("plop")).isEqualTo("foo");
+  @DisplayName("returns bar")
+  void bar() {
+    assertThat(new Bar().bar()).isEqualTo("bar");
   }
 
   @ParameterizedTest
   @ValueSource(strings = {"foo", "bar", "baz"})
-  @DisplayName("returns mocked bar for")
-  void foo_bar_baz_return_mocked_bar(String input) {
-    when(bar.bar()).thenReturn("foo");
-    assertThat(foo.foo(input)).isEqualTo("foo");
+  @DisplayName("returns bar even with dummy parameter")
+  void parameterized_bar(String input) {
+    System.out.println("Unused " + input + " \uD83D\uDE07");
+    assertThat(new Bar().bar()).isEqualTo("bar");
   }
 
   @Property
   @Label("always returns bar")
-  boolean always_return_bar(@ForAll("anyString") String anyString) {
-    return new Foo(new Bar()).foo(anyString).equals("bar");
+  boolean bar_rule(@ForAll("anyString") String anyString) {
+    System.out.println("Unused " + anyString + " \uD83D\uDE07");
+    return new Bar().bar().equals("bar");
   }
 
   @Provide

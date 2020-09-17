@@ -1,10 +1,10 @@
-record Foo (Bar bar) {
-  String foo(String dummyInput) {
-    return bar.bar();
-  }
-}
-class Bar {
+final class Bar extends Barable {
+  @Override
   String bar() {
     return "bar";
   }
+}
+
+sealed abstract class Barable permits Bar {
+  String bar() { return ""; }
 }
