@@ -1,7 +1,9 @@
 final class Bar extends Barable {
   @Override
   String bar() {
-    return "bar";
+    return """
+      bar
+      """.stripTrailing();
   }
 }
 
