@@ -18,6 +18,7 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 ## Suggested katas
 
 - [Coffee machine](http://simcap.github.io/coffeemachine)
+- [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/)
 
 ## Development tasks
 
