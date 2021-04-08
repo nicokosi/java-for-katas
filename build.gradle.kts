@@ -29,7 +29,6 @@ tasks.test {
 
 repositories {
   mavenCentral()
-  jcenter()
 }
 
 dependencies {
