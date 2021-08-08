@@ -14,6 +14,6 @@ jobs:
           java-version: '16'
           distribution: 'adopt'
       - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
+        uses: gradle/wrapper-validation-action@a9ea6903464ddbaa9cac308e863ccc0a362742a6
       - name: Build with Gradle
         run: ./gradlew build
