@@ -1,4 +1,4 @@
-# Java for katas [![Build Status](https://github.com/nicokosi/java-for-katas/actions/workflows/ci.yml/badge.svg)](https://travis-ci.org/nicokosi/java-for-katas)
+# Java for katas [![Build Status](https://github.com/nicokosi/java-for-katas/actions/workflows/ci.yml/badge.svg)](https://github.com/nicokosi/java-for-katas/actions/workflows/ci.yml)
 
 A basic Java setup for [code katas](http://wiki.c2.com/?CodeKata).
 
