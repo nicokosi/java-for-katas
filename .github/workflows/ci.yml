@@ -11,8 +11,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '16'
-          distribution: 'adopt'
+          java-version: '17-ea'
+          distribution: 'zulu'
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@a9ea6903464ddbaa9cac308e863ccc0a362742a6
       - name: Build with Gradle
