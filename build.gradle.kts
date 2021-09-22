@@ -32,9 +32,9 @@ repositories {
 }
 
 dependencies {
-  testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.7.2")
-  testImplementation("org.junit.jupiter", "junit-jupiter-params", "5.7.2")
-  testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.7.2")
+  testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.8.1")
+  testImplementation("org.junit.jupiter", "junit-jupiter-params", "5.8.1")
+  testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.8.1")
   testImplementation("org.assertj", "assertj-core", "3.20.2")
   testImplementation("org.mockito", "mockito-core", "3.12.1")
   testImplementation("net.jqwik", "jqwik", "1.5.4")
