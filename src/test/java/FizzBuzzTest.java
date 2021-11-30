@@ -8,12 +8,26 @@ import static org.assertj.core.api.Assertions.assertThat;
 class FizzBuzzTest {
 
   @ParameterizedTest
-  @DisplayName("should return correct value")
+  @DisplayName("should return known values")
   @CsvSource(textBlock = """
-      1,         1
+      1,  1
+      2,  2
+      3,  Fizz
+      4,  4
+      5,  Buzz
+      6,  Fizz
+      7,  7
+      8,  8
+      9,  Fizz
+      10, Buzz
+      11, 11
+      12, Fizz
+      13, 13
+      14, 14
+      15, Fizz Buzz
     """)
-  void fizzBuzz(final int input, final int output) {
-    assertThat(FizzBuzz.fizzBuzz(input)).isEqualTo(output);
+  void fizzBuzz(final int input, final String output) {
+    assertThat(FizzBuzz.value(input)).isEqualTo(output);
   }
 
 }

@@ -1,5 +1,5 @@
-class FizzBuzz {
-  static int fizzBuzz(int input) {
-    return 1;
+public class FizzBuzz {
+  public static String value(int input) {
+    return String.valueOf(input);
   }
 }
