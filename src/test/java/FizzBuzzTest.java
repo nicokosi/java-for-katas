@@ -10,7 +10,7 @@ class FizzBuzzTest {
   @ParameterizedTest
   @DisplayName("should return correct value")
   @CsvSource(textBlock = """
-    apple,         1
+      1,         1
     """)
   void fizzBuzz(final int input, final int output) {
     assertThat(FizzBuzz.fizzBuzz(input)).isEqualTo(output);
