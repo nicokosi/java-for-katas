@@ -4,7 +4,7 @@ record Foo (Bar bar) {
   }
 }
 class Bar {
-  String bar() {
+  public String bar() {
     return "bar";
   }
 }
