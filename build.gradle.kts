@@ -36,7 +36,7 @@ dependencies {
   testImplementation("org.junit.jupiter", "junit-jupiter-params", "5.8.2")
   testImplementation("org.junit.jupiter", "junit-jupiter-engine", "5.8.2")
   testImplementation("org.assertj", "assertj-core", "3.23.1")
-  testImplementation("org.mockito", "mockito-core", "4.6.0")
+  testImplementation("org.mockito", "mockito-core", "4.6.1")
   testImplementation("net.jqwik", "jqwik", "1.6.5")
 }
 
