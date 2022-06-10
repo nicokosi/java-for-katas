@@ -13,5 +13,17 @@ class LeapYearTest {
     assertThat(LeapYear.leapYear(2000)).isTrue();
   }
 
+  @Test
+  void notLeapYears() {
+    assertThat(LeapYear.leapYear(100)).isFalse();
+    assertThat(LeapYear.leapYear(200)).isFalse();
+    assertThat(LeapYear.leapYear(300)).isFalse();
+    assertThat(LeapYear.leapYear(500)).isFalse();
+    assertThat(LeapYear.leapYear(1700)).isFalse();
+    assertThat(LeapYear.leapYear(1800)).isFalse();
+    assertThat(LeapYear.leapYear(1900)).isFalse();
+    assertThat(LeapYear.leapYear(2100)).isFalse();
+  }
+
 }
 

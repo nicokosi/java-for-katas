@@ -1,5 +1,5 @@
 class LeapYear {
   public static boolean leapYear(int year) {
-    return true;
+    return year % 400 == 0;
   }
 }
