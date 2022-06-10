@@ -29,6 +29,9 @@ class LeapYearTest {
     assertThat(LeapYear.leapYear(1700)).isFalse();
     assertThat(LeapYear.leapYear(1800)).isFalse();
     assertThat(LeapYear.leapYear(1900)).isFalse();
+    assertThat(LeapYear.leapYear(2017)).isFalse();
+    assertThat(LeapYear.leapYear(2018)).isFalse();
+    assertThat(LeapYear.leapYear(2019)).isFalse();
     assertThat(LeapYear.leapYear(2100)).isFalse();
   }
 
