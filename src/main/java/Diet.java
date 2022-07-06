@@ -1,0 +1,6 @@
+enum Diet {
+  VEGAN,
+  VEGETARIAN,
+  PESCETARIAN,
+  CARNIVOROUS
+}
