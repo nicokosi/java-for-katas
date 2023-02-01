@@ -25,4 +25,14 @@ class FractionTest {
         new Fraction(5, 3));
   }
 
+  @Test
+  void reduction() {
+    assertThat(
+      new Fraction(1, 1)
+        .add(
+          new Fraction(1, 2)))
+      .isEqualTo(
+        new Fraction(3, 2));
+  }
+
 }
