@@ -1,8 +1,8 @@
-import fraction.Fraction;
+package fraction;
+
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
 
 class FractionTest {
 
@@ -18,10 +18,11 @@ class FractionTest {
   @Test
   void different_denominator() {
     assertThat(
-      new Fraction(1, 1).add(new Fraction(2, 3)))
+      new Fraction(1, 1)
+        .add(
+          new Fraction(2, 3)))
       .isEqualTo(
-        new Fraction(5, 3)
-      );
+        new Fraction(5, 3));
   }
 
 }
