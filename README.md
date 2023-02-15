@@ -17,11 +17,11 @@ Either use your favorite IDE with [`Gradle`](https://gradle.org/) integration (f
 
 ## Suggested katas
 
-Some simple katas:
 - [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/)
 - [Roman Numerals](https://codingdojo.org/kata/RomanNumerals/)
 - [Leap Years](https://codingdojo.org/kata/LeapYears/)
 - [Parrot Refactoring Kata](https://github.com/emilybache/Parrot-Refactoring-Kata)
+- [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)
 
 But there are many other ones! 🙂
 
