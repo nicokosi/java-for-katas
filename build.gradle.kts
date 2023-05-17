@@ -3,7 +3,7 @@ version = "1.0-SNAPSHOT"
 description = "A basic Java project with test libraries for katas"
 
 plugins {
-  id("com.adarshr.test-logger") version ("2.1.1")
+  id("com.adarshr.test-logger") version ("3.2.0")
   id("java")
   id("se.patrikerdes.use-latest-versions") version ("0.2.17")
   id("com.github.ben-manes.versions") version ("0.46.0")
