@@ -35,7 +35,7 @@ repositories {
 dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
   testImplementation("org.assertj", "assertj-core", "3.24.2")
-  testImplementation("org.mockito", "mockito-core", "5.3.1")
+  testImplementation("org.mockito", "mockito-core", "5.4.0")
   testImplementation("net.jqwik", "jqwik", "1.7.3")
 }
 
