@@ -14,6 +14,6 @@ jobs:
           java-version: '21'
           distribution: 'zulu'
       - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@460a3ca55fc5d559238a0efc7fa9f7465df8585d
+        uses: gradle/wrapper-validation-action@88425854a36845f9c881450d9660b5fd46bee142
       - name: Build with Gradle
         run: ./gradlew build
