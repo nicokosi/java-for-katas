@@ -36,7 +36,7 @@ dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter:5.11.0")
   testImplementation("org.assertj", "assertj-core", "3.26.3")
   testImplementation("org.mockito", "mockito-core", "5.13.0")
-  testImplementation("net.jqwik", "jqwik", "1.9.0")
+  testImplementation("net.jqwik", "jqwik", "1.9.1")
 }
 
 tasks.withType<Test> {
