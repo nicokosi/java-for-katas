@@ -6,7 +6,7 @@ plugins {
   id("com.adarshr.test-logger") version ("4.0.0")
   id("java")
   id("se.patrikerdes.use-latest-versions") version ("0.2.18")
-  id("com.github.ben-manes.versions") version ("0.51.0")
+  id("com.github.ben-manes.versions") version ("0.52.0")
 }
 
 java {
