@@ -13,4 +13,11 @@ public class ProductStore {
       .filter(product -> product.price() > minimumPrice)
       .toList();
   }
+
+  public double averagePrice() {
+    return products.stream()
+      .mapToDouble(Product::price)
+      .average()
+      .orElse(0);
+  }
 }
