@@ -16,6 +16,13 @@ class ProductStoreTest {
   }
 
   @Test
+  void manyProductsWithMinimumPrice() {
+    assertThat(
+      productStore.manyProductsWithMinimumPrice(1)
+    ).isNotEmpty();
+  }
+
+  @Test
   void averagePrice() {
     assertThat(
       productStore.averagePrice()
