@@ -3,10 +3,10 @@ version = "1.0-SNAPSHOT"
 description = "A basic Java project with test libraries for katas"
 
 plugins {
-  id("com.adarshr.test-logger") version ("4.0.0")
   id("java")
-  id("se.patrikerdes.use-latest-versions") version ("0.2.18")
-  id("com.github.ben-manes.versions") version ("0.52.0")
+  alias(libs.plugins.ben.manes.versions)
+  alias(libs.plugins.test.logger)
+  alias(libs.plugins.use.latest.versions)
 }
 
 java {
@@ -33,12 +33,12 @@ repositories {
 }
 
 dependencies {
-  testImplementation(platform("org.junit:junit-bom:5.12.2"))
-  testImplementation("org.junit.jupiter:junit-jupiter")
-  testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-  testImplementation("org.assertj", "assertj-core", "3.27.3")
-  testImplementation("org.mockito", "mockito-core", "5.17.0")
-  testImplementation("net.jqwik", "jqwik", "1.9.2")
+  testImplementation(libs.assertj.core)
+  testImplementation(libs.jqwik)
+  testImplementation(libs.junit.jupiter)
+  testImplementation(libs.mockito.core)
+  testImplementation(platform(libs.junit.bom))
+  testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 tasks.withType<Test> {
@@ -46,10 +46,10 @@ tasks.withType<Test> {
 }
 
 fun isNonStable(version: String): Boolean {
-    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.uppercase().contains(it) }
-    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
-    val isStable = stableKeyword || regex.matches(version)
-    return isStable.not()
+  val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.uppercase().contains(it) }
+  val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+  val isStable = stableKeyword || regex.matches(version)
+  return isStable.not()
 }
 
 tasks.withType<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask> {
