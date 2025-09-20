@@ -4,7 +4,7 @@ jqwik = { module = "net.jqwik:jqwik", version = "1.9.3" }
 junit-bom = { module = "org.junit:junit-bom", version = "5.13.4" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
-mockito-core = { module = "org.mockito:mockito-core", version = "5.19.0" }
+mockito-core = { module = "org.mockito:mockito-core", version = "5.20.0" }
 
 [plugins]
 ben-manes-versions = { id = "com.github.ben-manes.versions", version = "0.52.0"}
