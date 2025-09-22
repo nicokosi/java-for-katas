@@ -1,5 +1,5 @@
 [libraries]
-assertj-core = { module = "org.assertj:assertj-core", version = "3.27.5" }
+assertj-core = { module = "org.assertj:assertj-core", version = "3.27.6" }
 jqwik = { module = "net.jqwik:jqwik", version = "1.9.3" }
 junit-bom = { module = "org.junit:junit-bom", version = "6.0.1" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
