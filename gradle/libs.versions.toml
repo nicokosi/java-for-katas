@@ -7,6 +7,6 @@ junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher
 mockito-core = { module = "org.mockito:mockito-core", version = "5.20.0" }
 
 [plugins]
-ben-manes-versions = { id = "com.github.ben-manes.versions", version = "0.52.0"}
+ben-manes-versions = { id = "com.github.ben-manes.versions", version = "0.53.0"}
 test-logger = { id = "com.adarshr.test-logger", version = "4.0.0" }
 use-latest-versions = { id = "se.patrikerdes.use-latest-versions", version = "0.2.19" }
