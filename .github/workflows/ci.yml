@@ -11,8 +11,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v6
         with:
-          java-version: "26"
-          distribution: "zulu"
+          java-version: "27"
+          distribution: "liberica"
       - name: Validate Gradle wrapper
         uses: gradle/actions/wrapper-validation@v6
       - name: Build with Gradle
